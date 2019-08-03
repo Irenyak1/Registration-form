@@ -11,21 +11,21 @@
 
 <body>
     <div class="container">
-        <form class="myForm" action="#">
-            <h1>Registration Form</h1>
+        <h1>Registration Form</h1>
+        <form class="myForm" action="#" onsubmit="return validate()">           
             <div class="myForm">
-                <label for="userId">User-id:</label>
-                <input id="userId" type="text" name="user-id" required>
+                <label for="userId">User id:</label>
+                <input id="userId" type="text" name="user-id">
             </div>
 
             <div class="myForm">
                 <label for="passw">Password:</label>
-                <input id="passw" type="password" name="password" required>
+                <input id="passw" type="password" name="password">
             </div>
 
             <div class="myForm">
                 <label for="nme">Name:</label>
-                <input id="nme" type="text" name="nam" required>
+                <input id="nme" type="text" name="nam">
 
             </div>
 
@@ -35,34 +35,35 @@
             </div>
 
             <div class="myForm">
-                <label for="selct" required>Country:</label>
-                <select id="selector">
-                    <option id="selct">(Please select a country)</option>
-                    <option id="selct">Uganda</option>
-                    <option id="selct">Kenya</option>
+                <label for="selct">Country:</label>
+                <select id="selector" name="myselect" class="required">
+                    <option value="" id="selct">(Please select a country)</option>
+                    <option value="uganda" id="selct">Uganda</option>
+                    <option value="kenya" id="selct">Kenya</option>
                 </select>
             </div>
 
             <div class="myForm">
                 <label for="zip">ZIP Code:</label>
-                <input id="zip" type="text" name="zipCode" required>
+                <input id="zip" type="text" name="zipCode">
             </div>
 
             <div class="myForm">
                 <label for="mail">Email:</label>
-                <input id="mail" type="email" name="email" required>
+                <input id="mail" type="email" name="email">
             </div>
+
 
             <div class="mychoice">
                 <label for="choice">Sex:</label>
-                <input id="choice" type="radio" name="male" required>Male
-                <input id="choice" type="radio" name="female" required>Female
+                <input type="radio" name="myRadios" value="Male"/>Male
+                <input type="radio" name="myRadios" value="Female"/>Female
             </div>
 
             <div class="mychoice">
                 <label for="check">Language:</label>
-                <input id="check" type="checkbox" name="male" required>English
-                <input id="check" type="checkbox" name="female" required>Non English
+                <input type="checkbox" name="myChecks" value="english">English
+                <input type="checkbox" name="myChecks" value="non english">Non English
             </div>
 
             <div class="myText">
