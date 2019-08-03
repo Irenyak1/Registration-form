@@ -1,0 +1,63 @@
+
+body{
+    background-color: black;
+    margin: 0%;
+}
+.container{ 
+    width: 40%;
+    margin: 20px auto; 
+    padding: 20px;
+    background-color: white;
+}
+
+ label{
+    display:inline-block;
+    text-align: right;
+    width: 90px;
+    margin:5px;
+
+}
+
+/* input[type="text"], input[type="password"], input[type="email"], #selector{
+    width: 150px;
+    border: 1px solid gray;
+    height: 20px;
+    border-radius: 1px;
+
+} */
+
+#userId, #passw, #nme, #addre, #mail, #zip, #selct{
+  width: 100px;
+  border: 1px solid rgb(122, 122, 139);
+  height: 20px;
+  border-radius: 1px;
+  margin: 5px 0px 5px 0px;
+
+}
+
+#nme, #addre, #mail{
+width: 300px;
+}
+
+#zip{
+  width: 140px;
+}
+
+#selector{
+  background-color: white
+}
+
+label[for="textBox"]{
+  vertical-align: top;
+}
+#notes{
+  width: 370px;
+}
+
+#submt{
+  margin-left: 40%;
+  margin-top: 20px;
+  width: 75px;
+  font-size: 18px;
+}
+

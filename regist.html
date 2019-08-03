@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="regist.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="myForm" action="#">
+            <h1>Registration Form</h1>
+            <div class="myForm">
+                <label for="userId">User-id:</label>
+                <input id="userId" type="text" name="user-id" required>
+            </div>
+
+            <div class="myForm">
+                <label for="passw">Password:</label>
+                <input id="passw" type="password" name="password" required>
+            </div>
+
+            <div class="myForm">
+                <label for="nme">Name:</label>
+                <input id="nme" type="text" name="nam" required>
+
+            </div>
+
+            <div class="myForm">
+                <label for="addre">Address:</label>
+                <input id="addre" type="text" name="address">
+            </div>
+
+            <div class="myForm">
+                <label for="selct" required>Country:</label>
+                <select id="selector">
+                    <option id="selct">(Please select a country)</option>
+                    <option id="selct">Uganda</option>
+                    <option id="selct">Kenya</option>
+                </select>
+            </div>
+
+            <div class="myForm">
+                <label for="zip">ZIP Code:</label>
+                <input id="zip" type="text" name="zipCode" required>
+            </div>
+
+            <div class="myForm">
+                <label for="mail">Email:</label>
+                <input id="mail" type="email" name="email" required>
+            </div>
+
+            <div class="mychoice">
+                <label for="choice">Sex:</label>
+                <input id="choice" type="radio" name="male" required>Male
+                <input id="choice" type="radio" name="female" required>Female
+            </div>
+
+            <div class="mychoice">
+                <label for="check">Language:</label>
+                <input id="check" type="checkbox" name="male" required>English
+                <input id="check" type="checkbox" name="female" required>Non English
+            </div>
+
+            <div class="myText">
+                <label for="textBox">About:</label>
+                <textarea id="notes" name="notes" rows="10" cols="20"></textarea>
+            </div>
+
+            <div class="sub">
+                <button id="submt" type="submit" name="submit">Submit</button>
+            </div>
+
+        </form>
+    </div>
+    <script src="regist.js"></script>
+</body>
+
+</html>
