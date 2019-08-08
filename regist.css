@@ -1,15 +1,16 @@
-
+/* Styles for the body of the registration form */
 body{
     background-color: black;
     margin: 0%;
 }
+/* Styles for the major container that surrounds the registration form */
 .container{ 
     width: 40%;
     margin: 20px auto; 
     padding: 20px;
     background-color: white;
 }
-
+/* Styles for all the labels in the file*/
  label{
     display:inline-block;
     text-align: right;
@@ -17,7 +18,7 @@ body{
     margin:5px;
 
 }
-
+/* Styles for all the major input fields in the form */
 #userId, #passw, #nme, #addre, #mail, #zip, #selector{
   width: 200px;
   border: 1px solid rgb(122, 122, 139);
@@ -27,12 +28,12 @@ body{
   border-radius: 3px;
 
 }
-
+/* Styles for country selector */
 #selector{
   background-color: white;
   height: 25px;
 }
-
+/* Styles for the about section to write notes*/
 label[for="textBox"]{
   vertical-align: top;
 }
@@ -42,6 +43,7 @@ label[for="textBox"]{
   border-radius: 3px;
 }
 
+/* Styles for the submit button */
 #submt{
   margin-left: 40%;
   margin-top: 20px;
