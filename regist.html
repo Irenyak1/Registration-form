@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <h1>Registration Form</h1>
-        <form class="myForm" action="#" onsubmit="return validate()">           
+        <form class="myForm" id="the-form" action="#">           
             <div class="myForm">
                 <label for="userId">User id:</label>
                 <input id="userId" type="text" name="user-id">
@@ -34,12 +34,12 @@
                 <input id="addre" type="text" name="address">
             </div>
 
-            <div class="myForm">
+            <div class="myForm" id="mySelect">
                 <label for="selct">Country:</label>
                 <select id="selector" name="myselect" class="required">
-                    <option value="" id="selct">(Please select a country)</option>
-                    <option value="uganda" id="selct">Uganda</option>
-                    <option value="kenya" id="selct">Kenya</option>
+                    <option value="0" id="selct">(Please select a country)</option>
+                    <option value="1" id="selct">Uganda</option>
+                    <option value="2" id="selct">Kenya</option>
                 </select>
             </div>
 
@@ -68,13 +68,13 @@
 
             <div class="myText">
                 <label for="textBox">About:</label>
-                <textarea id="notes" name="notes" rows="10" cols="20"></textarea>
+                <textarea id="notes" name="notes" rows="10" cols="20" maxlength="300"></textarea>
             </div>
 
             <div class="sub">
                 <button id="submt" type="submit" name="submit">Submit</button>
             </div>
-
+            <!-- <div id="callOut"></div> -->
         </form>
     </div>
     <script src="regist.js"></script>
