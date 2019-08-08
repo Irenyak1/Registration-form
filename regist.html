@@ -8,7 +8,8 @@
     <title>Registration Form</title>
     <link rel="stylesheet" type="text/css" href="regist.css">
 </head>
-
+<!-- Creating a registration form with different input types for
+    a user to input the required data before registering -->
 <body>
     <div class="container">
         <h1>Registration Form</h1>
@@ -53,29 +54,34 @@
                 <input id="mail" type="email" name="email">
             </div>
 
-
+            <!-- Radio buttons for a user to select either male or f
+                emale during registration -->
             <div class="mychoice">
                 <label for="choice">Sex:</label>
                 <input type="radio" name="myRadios" value="Male"/>Male
                 <input type="radio" name="myRadios" value="Female"/>Female
             </div>
 
+            <!-- Check boxes for a user to select where they use 
+                English or non English -->
             <div class="mychoice">
                 <label for="check">Language:</label>
                 <input type="checkbox" name="myChecks" value="english">English
                 <input type="checkbox" name="myChecks" value="non english">Non English
             </div>
 
+            <!-- Text box for a user to any comments or notes of their choice -->
             <div class="myText">
                 <label for="textBox">About:</label>
                 <textarea id="notes" name="notes" rows="10" cols="20" maxlength="300"></textarea>
             </div>
 
+            <!-- Submit button for the user to submit a fully filled form -->
             <div class="sub">
                 <button id="submt" type="submit" name="submit">Submit</button>
             </div>
-            <!-- <div id="callOut"></div> -->
         </form>
+        <!-- Javascript file to validate the required user inputs -->
     </div>
     <script src="regist.js"></script>
 </body>
